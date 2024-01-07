@@ -1,0 +1,79 @@
+###
+POST http://localhost:4000/api/auth/login
+Content-Type: application/json
+
+{
+    "username": "chibuibke2u8uuj", 
+    "password": "000io" 
+}
+
+
+###
+POST http://localhost:4000/api/auth/register
+Content-Type: application/json
+
+{
+    "email": "vgcvgh@gmjjnal.com",
+    "username": "chibuibke2u8uuj", 
+    "password": "000io" 
+}
+
+
+###
+PUT   http://localhost:4000/api/users/6572c4bffa2711b853c978d2
+Content-Type: application/json
+
+{
+    
+    "username": "francischii"
+    
+}
+
+
+
+###
+PUT   http://localhost:4000/api/users/6572c4bffa2711b853c978d2
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1NzJjNGJmZmEyNzExYjg1M2M5NzhkMiIsImlhdCI6MTcwMjAyNDU0N30.CdgerMNlJWJDD7vzQCB1VH_rTpyBiBk9__tDXUfE8UM; Path=/; HttpOnly; Domain=localhost
+
+
+###
+POST http://localhost:4000/products
+Content-Type: application/json
+
+{
+    "title": "ffff",
+    "desc": "test", 
+    "img": "test" ,
+    "categories": ["men", "children"],
+    "size": "medium",
+    "color": "yellow",
+    "price": 30
+}
+
+
+
+###
+GET  http://localhost:4000/users//checkauthenticated
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1NzJjNGJmZmEyNzExYjg1M2M5NzhkMiIsImlhdCI6MTcwMjA0NzQ3M30.kbzqDQRb03Xkc3E0geO078TUFWuVsXZKpP_wgIlkjj0
+
+###
+POST http://localhost:4000/orders
+Content-Type: application/json
+
+{
+    "userId": "6575a2959452ed8eeaf0cd49",
+    "products": [{
+      "productId": "nrjrek",
+      "quantity:": "5"
+    },
+    
+    {
+      "productId": "rfjurfi84",
+      "quantity:": "3"
+    }
+    ],
+    "amount": 20,
+    "address": "Nigeria"
+}
